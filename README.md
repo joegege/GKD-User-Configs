@@ -4,5 +4,6 @@
 GKD ad remover app for Android phone.
 
 ## formatter
-https://jsonformatter.curiousconcept.com/#
 
+JSON5:  
+https://jsonformatter.org/json5-formatter
