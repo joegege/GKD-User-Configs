@@ -1,168 +1,187 @@
-// 订阅使用 JSON5 语法, 根节点可以是数组也可以是对象
 [
   {
-  id: 'com.mi.health',
-  name: 'Xiaomi Health',
-  groups: [
+    id: 'com.mi.health',
+    name: 'Xiaomi Health',
+    groups: [
       {
-      key: 1,
-      name: '首页-文档列表广告',
-      activityIds: ['com.xiaomi.fitness.login.SplashActivity'],
-      rules: [
+        key: 1,
+        name: '首页-文档列表广告',
+        activityIds: [
+          'com.xiaomi.fitness.login.SplashActivity',
+        ],
+        rules: [
           {
-          matches: '[id$="/dialog_close"]',
-          snapshotUrls: 'https: //i.gkd.li/import/12505365',//获取链接的方法在上一步有说明
-          }
+            matches: '[id$="/dialog_close"]',
+            snapshotUrls: 'https: //i.gkd.li/import/12505365',
+          },
         ],
       },
       {
-      key: 2,
-      name: '设备-后台运行提醒',
-      activityIds: ['com.xiaomi.fitness.login.SplashActivity'],
-      rules: [
-          {
-          matches: '[id$="/close_icon"]',
-          snapshotUrls: 'https: //i.gkd.li/import/12505365',//获取链接的方法在上一步有说明
-          }
+        key: 2,
+        name: '设备-后台运行提醒',
+        activityIds: [
+          'com.xiaomi.fitness.login.SplashActivity',
         ],
-      },
-    ],
-  },
-  {
-  id: 'com.alicloud.databox',
-  name: 'AliYunPan',
-  groups: [
-      {
-      key: 1,
-      name: '备份盘-专注备份tip',
-      activityIds: ['com.alicloud.databox.MainActivity'   ],
-      rules: [
+        rules: [
           {
-          matches: '[id$="/notice_view_icon_button"        ]',
-          snapshotUrls: 'https: //i.gkd.li/import/12505365',//获取链接的方法在上一步有说明
-          }
+            matches: '[id$="/close_icon"]',
+            snapshotUrls: 'https: //i.gkd.li/import/12505365',
+          },
         ],
       },
     ],
   },
   {
-  id: 'com.qinlin.edoor',
-  name: '亲邻',
-  groups: [
+    id: 'com.alicloud.databox',
+    name: 'AliYunPan',
+    groups: [
       {
-      key: 1,
-      name: '开门成功-全幅广告',
-      activityIds: ['com.qinlin.edoor.MainActivity'    ],
-      rules: [
-          {
-          matches: '[id$="/iv_close"       ]',
-          snapshotUrls: 'https: //i.gkd.li/import/12505365',//获取链接的方法在上一步有说明
-          }
+        key: 1,
+        name: '备份盘-专注备份tip',
+        activityIds: [
+          'com.alicloud.databox.MainActivity',
         ],
-      },
-      {
-      key: 2,
-      name: '首页-顶部广告',
-      activityIds: ['com.qinlin.edoor.MainActivity'    ],
-      rules: [
+        rules: [
           {
-          matches: '[id$="/close_m_image_left_text_right_no_compliance"]',
-          snapshotUrls: 'https: //i.gkd.li/import/12505365',//获取链接的方法在上一步有说明
-          }
+            matches: '[id$="/notice_view_icon_button"        ]',
+            snapshotUrls: 'https: //i.gkd.li/import/12505365',
+          },
         ],
       },
     ],
   },
   {
-  id: 'com.leoao.fitness',
-  name: '乐刻运动',
-  groups: [
+    id: 'com.qinlin.edoor',
+    name: '亲邻',
+    groups: [
       {
-      key: 1,
-      name: '开屏广告',
-      activityIds: ['com.leoao.fitness.main.MainActivity'],
-      rules: [
+        key: 1,
+        name: '开门成功-全幅广告',
+        activityIds: [
+          'com.qinlin.edoor.MainActivity',
+        ],
+        rules: [
           {
-          matches: '[id$="/tv_skip_advertisement"        ]',
-          snapshotUrls: 'https: //i.gkd.li/import/12505365',//获取链接的方法在上一步有说明
-          }
+            matches: '[id$="/iv_close"       ]',
+            snapshotUrls: 'https: //i.gkd.li/import/12505365',
+          },
         ],
       },
       {
-      key: 2,
-      name: '打开通知消息',
-      activityIds: ['com.leoao.fitness.main.MainActivity'    ],
-      rules: [
-          {
-          matches: '[id$="/img_dialog_base_close"         ]',
-          snapshotUrls: 'https: //i.gkd.li/import/12505365',//获取链接的方法在上一步有说明
-          }
+        key: 2,
+        name: '首页-顶部广告',
+        activityIds: [
+          'com.qinlin.edoor.MainActivity',
         ],
-      },
-    ],
-  },
-  {
-  id: 'com.youku.phone',
-  name: '优酷视频',
-  groups: [
-      {
-      key: 1,
-      name: '青少年模式',
-      activityIds: ['com.youku.v2.HomePageEntry'     ],
-      rules: [
+        rules: [
           {
-          matches: '[id$="/dialog_ok_button"        ]',
-          snapshotUrls: 'https: //i.gkd.li/import/12505365',//获取链接的方法在上一步有说明
-          }
-        ],
-      },
-      {
-      key: 2,
-      name: '顶部广告',
-      activityIds: ['com.youku.phone.ActivityWelcome'      ],
-      rules: [
-          {
-          matches: '[id$="/home_fragment_ad_close"         ]',
-          snapshotUrls: 'https: //i.gkd.li/import/12505365',//获取链接的方法在上一步有说明
-          }
+            matches: '[id$="/close_m_image_left_text_right_no_compliance"]',
+            snapshotUrls: 'https: //i.gkd.li/import/12505365',
+          },
         ],
       },
     ],
   },
   {
-  id: 'com.flightradar24free',
-  name: 'Flightradar24',
-  groups: [
+    id: 'com.leoao.fitness',
+    name: '乐刻运动',
+    groups: [
       {
-      key: 1,
-      name: '全屏广告',
-      activityIds: ['com.google.android.gms.ads.AdActivity'      ],
-      rules: [
+        key: 1,
+        name: '开屏广告',
+        activityIds: [
+          'com.leoao.fitness.main.MainActivity',
+        ],
+        rules: [
           {
-          matches: '[name$="android.widget.Button"         ]',
-          snapshotUrls: 'https: //i.gkd.li/import/12505365',//获取链接的方法在上一步有说明
-          }
+            matches: '[id$="/tv_skip_advertisement"        ]',
+            snapshotUrls: 'https: //i.gkd.li/import/12505365',
+          },
+        ],
+      },
+      {
+        key: 2,
+        name: '打开通知消息',
+        activityIds: [
+          'com.leoao.fitness.main.MainActivity',
+        ],
+        rules: [
+          {
+            matches: '[id$="/img_dialog_base_close"         ]',
+            snapshotUrls: 'https: //i.gkd.li/import/12505365',
+          },
         ],
       },
     ],
   },
   {
-  id: 'youqu.android.todesk',
-  name: 'ToDesk',
-  groups: [
+    id: 'com.youku.phone',
+    name: '优酷视频',
+    groups: [
       {
-      key: 1,
-      name: '专业版广告',
-      activityIds: ['youqu.android.todesk.activity.MainActivity'     ],
-      rules: [
+        key: 1,
+        name: '青少年模式',
+        activityIds: [
+          'com.youku.v2.HomePageEntry',
+        ],
+        rules: [
           {
-          matches: '[id$="/ivAdClose"         ]',
-          snapshotUrls: 'https: //i.gkd.li/import/12505365',//获取链接的方法在上一步有说明
-          }
+            matches: '[id$="/dialog_ok_button"        ]',
+            snapshotUrls: 'https: //i.gkd.li/import/12505365',
+          },
+        ],
+      },
+      {
+        key: 2,
+        name: '顶部广告',
+        activityIds: [
+          'com.youku.phone.ActivityWelcome',
+        ],
+        rules: [
+          {
+            matches: '[id$="/home_fragment_ad_close"         ]',
+            snapshotUrls: 'https: //i.gkd.li/import/12505365',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'com.flightradar24free',
+    name: 'Flightradar24',
+    groups: [
+      {
+        key: 1,
+        name: '全屏广告',
+        activityIds: [
+          'com.google.android.gms.ads.AdActivity',
+        ],
+        rules: [
+          {
+            matches: '[name$="android.widget.Button"         ]',
+            snapshotUrls: 'https: //i.gkd.li/import/12505365',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'youqu.android.todesk',
+    name: 'ToDesk',
+    groups: [
+      {
+        key: 1,
+        name: '专业版广告',
+        activityIds: [
+          'youqu.android.todesk.activity.MainActivity',
+        ],
+        rules: [
+          {
+            matches: '[id$="/ivAdClose"         ]',
+            snapshotUrls: 'https: //i.gkd.li/import/12505365',
+          },
         ],
       },
     ],
   },
 ]
-
-
